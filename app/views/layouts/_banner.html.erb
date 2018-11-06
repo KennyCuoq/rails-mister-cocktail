@@ -1,7 +1,7 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://i2.wp.com/welovebudapest.com/en/wp-content/uploads/sites/2/2014/12/e94bc9e2f7691a75535aad818c3eae68.jpg?resize=1920%2C1080&ssl=1');">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://i2.wp.com/welovebudapest.com/en/wp-content/uploads/sites/2/2014/12/e94bc9e2f7691a75535aad818c3eae68.jpg');">
   <div class="banner-content">
     <h1>Mister Cocktail</h1>
     <p>All of your best cocktail recipes, in one place</p>
-    <a class="btn btn-primary btn-lg"><%= Cocktail.all %></a>
+    <%= link_to 'Surprise me!', cocktail_path(Cocktail.all.sample), class: 'btn btn-success btn-lg' %>
   </div>
 </div>
